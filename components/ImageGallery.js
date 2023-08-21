@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import firebase from 'firebase';
-import './ImageGallery.css';
+import 'src/app/ImageGallery.css';
 
 const ImageGallery = () => {
   const [images, setImages] = useState([]);

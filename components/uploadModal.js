@@ -20,34 +20,17 @@ const UploadModal = () => {
   const handleUploadButtonClick = () => {
     // Handle upload logic here
     if (selectedImage) {
-      // Upload image to Firebase storage in the 'images' folder
-      //const storageRef = firebase.storage().ref('images');
-      const storageRef = ref(storage, "images/" + file.name);
-      //const imageRef = storageRef.child(selectedImage.name);
-      uploadBytes(storageRef, file)
-      .then((snapshot) => {
-        console.log("Image uploaded successfully");
-      })
-      .catch((error) => {
-        console.error("Error uploading image", error);
-      });
-      const fileInput = document.getElementById("file-input"); // Assuming you have an input field with id "file-input" for selecting the image file
+      const storageRef = firebase.storage().ref();
+      const imagesRef = storageRef.child('images');
+      const uploadTask = imagesRef.child(selectedImage.name).put(selectedImage);
 
-      fileInput.addEventListener("change", (event) => {
-      const file = event.target.files[0];
-  
-      if (file) {
-      handleImageUpload(file);
-      }
+      uploadTask.then(() => {
+        console.log('Image uploaded successfully!');
+        // Additional logic or UI updates after successful upload
+      }).catch((error) => {
+        console.error('Error occurred during image upload:', error);
+        // Handle the error appropriately
       });
-      };
-      /*imageRef.put(selectedImage)
-        .then((snapshot) => {
-          console.log('Image uploaded successfully');
-        })
-        .catch((error) => {
-          console.error('Error uploading image:', error);
-        });*/
     }
 
     if (selectedVideo) {

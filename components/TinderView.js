@@ -4,7 +4,7 @@ import 'swiper/swiper-bundle.min.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Virtual } from 'swiper';
 
-import './TinderView.css'; // Import CSS file
+import 'src/app/TinderView.css' // Import CSS file
 
 SwiperCore.use([Navigation, Pagination, Virtual]);
 

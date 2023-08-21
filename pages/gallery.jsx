@@ -1,5 +1,5 @@
-import ImageGallery from "../wedding-gallery/src/app/components/ImageGallery";
-import Footer from "../wedding-gallery/src/app/components/footer";
+import ImageGallery from "../components/ImageGallery";
+import Footer from "../components/Footer"
 import Link from 'next/link';
 const Gallery = () => {
     return (
