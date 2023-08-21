@@ -1,5 +1,5 @@
-import Reels from "../wedding-gallery/src/app/components/Reels";
-import Footer from "../wedding-gallery/src/app/components/footer";
+import Reels from "../components/Reels";
+import Footer from "../components/Footer";
 import Link from 'next/link';
 const ReelsView = () => {
     return (

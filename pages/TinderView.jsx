@@ -1,5 +1,5 @@
-import TinderView from "../wedding-gallery/components/TinderView";
-import Footer from "../wedding-gallery/components/footer";
+import TinderView from "../components/TinderView";
+import Footer from "../components/Footer";
 import Link from 'next/link';
 const Tinder = () => {
     return (
