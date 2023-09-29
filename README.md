@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Image Gallery and Reel Serverless Backend
+
+This is a Mobile First Serverless webApp integrated with Firebase as Backend allowing Next.js to cater as both Frontend and Backend. 
 
 ## Getting Started
 
-First, run the development server:
+1. Install the required dependencies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+   ```
+   cd nextjs-image-gallery-and-reel-backend
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Start the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Open your browser and navigate to (http://localhost:3000) to access the application.
 
-## Learn More
+## Pages
 
-To learn more about Next.js, take a look at the following resources:
+1. Image Portrait
+- Shows Image in the Potrait
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Image Gallery
+- View a 3x3 grid of images.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Upload
+- Upload Images/Videos
 
-## Deploy on Vercel
+4. Portrait Reel
+- Shows Reel inside the Potrait
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Reel Gallery
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This page displays a gallery of images in reel format.
+
+- View a 3x3 grid of reel.
+## Technologies Used
+
+- Next.js: A React framework for building web applications.
+- Firebase
